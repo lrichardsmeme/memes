@@ -1,4 +1,5 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="PowerShellExecution.Default" %>
+<% Import Namespace="System" %>
+<%@ Page Language="C#" %>
  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -6,6 +7,12 @@
     <title></title>
 </head>
 <body>
+<script runat="server">
+  public string ServerSideFunction(string input)
+  {
+    return "Hello " + input;
+  }
+</script>
 <form id="form1" runat="server">
     <div>
         <table>
@@ -19,7 +26,7 @@
             </td></tr>
             <tr><td>
                 &nbsp;</td><td>
-                <asp:Button ID="ExecuteCode" runat="server" Text="Execute" Width="200" onclick="ExecuteCode_Click" />
+                <asp:Button ID="ExecuteCode" runat="server" Text="Execute" Width="200" onclick="ServerSideFuntion("World")" />
             </td></tr>
                 <tr><td>&nbsp;</td><td><h3>Result</h3></td></tr>
                 <tr><td>
