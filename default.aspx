@@ -4,13 +4,6 @@
 
 <script runat="server">
 
-    void Page_Load(Object sender, EventArgs e)
-    {
-        // Manually register the event-handling method for
-        // the Click event of the Button control.
-        Button1.Click += new EventHandler(this.GreetingBtn_Click);
-    }
-
     void GreetingBtn_Click(Object sender,
                            EventArgs e)
     {
