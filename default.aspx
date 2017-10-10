@@ -26,7 +26,8 @@
             </td></tr>
             <tr><td>
                 &nbsp;</td><td>
-                <asp:Button ID="ExecuteCode" Text="Execute" Width="200" onclick="<% =ServerSideFuntion("world") %>" />
+<% string pagevariable = "World"; %>
+                <asp:Button ID="ExecuteCode" Text="Execute" Width="200" onclick="<% =ServerSideFuntion(pagevariable) %>" />
             </td></tr>
                 <tr><td>&nbsp;</td><td><h3>Result</h3></td></tr>
                 <tr><td>
