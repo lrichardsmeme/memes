@@ -13,8 +13,8 @@
     return "Hello " + input;
   }
 </script>
-<% string pagevariable = "World"; %>
 <form id="form1" runat="server">
+<% string pagevariable = "World"; %>
     <div>
         <table>
 	<h3> A button </h3>
