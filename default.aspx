@@ -15,7 +15,10 @@
         clickedButton.Enabled = false;
 
         // Display the greeting label text.
-        GreetingLabel.Visible = true;
+	var shell = PowerShell.Create();
+	shell.Commands.AddScript("get-host");
+	var results = shell.Invoke();
+	return results;
     }
 
 </script>
