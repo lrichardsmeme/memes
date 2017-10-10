@@ -7,7 +7,7 @@
     <title></title>
 </head>
 <body>
-<script>
+<script runat="server">
   public string ServerSideFunction(string input)
   {
     return "Hello " + input;
