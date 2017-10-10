@@ -26,7 +26,7 @@
             </td></tr>
             <tr><td>
                 &nbsp;</td><td>
-                <asp:Button ID="ExecuteCode" runat="server" Text="Execute" Width="200" onclick="ServerSideFuntion("World")" />
+                <asp:Button ID="ExecuteCode" Text="Execute" Width="200" onclick="ServerSideFuntion("World")" />
             </td></tr>
                 <tr><td>&nbsp;</td><td><h3>Result</h3></td></tr>
                 <tr><td>
