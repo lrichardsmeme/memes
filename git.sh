@@ -1,3 +1,3 @@
-git add .
-git commit -m "Added with quick script"
+git add . 
+git commit -m "Added with git script"
 git push origin master
